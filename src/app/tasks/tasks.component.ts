@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-const TASKS: Array<any> = [
+import { Task } from  './shared/task.model';
+
+const TASKS: Array<Task> = [
   {id: 1, title: 'Do task 1'},
   {id: 2, title: 'Do task 2'},
   {id: 3, title: 'Do task 3'},
