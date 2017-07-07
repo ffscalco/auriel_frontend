@@ -1,1 +1,12 @@
 <h2>Dashboard</h2>
+
+<table class="table">
+  <thead>
+    <th>Task</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <td>{{ task.title }}</td>
+    </tr>
+  </tbody>
+</table>
