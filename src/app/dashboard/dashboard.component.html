@@ -3,10 +3,12 @@
 <table class="table">
   <thead>
     <th>Task</th>
+    <th>Actions</th>
   </thead>
   <tbody>
     <tr *ngFor="let task of tasks">
       <td>{{ task.title }}</td>
+      <td><a [routerLink]="['/tasks', task.id]" class="btn btn-info">Details</a></td>
     </tr>
   </tbody>
 </table>
