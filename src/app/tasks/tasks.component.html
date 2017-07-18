@@ -9,12 +9,12 @@
       <td>{{ task.id }}</td>
       <td>{{ task.title }}</td>
       <td>
-        <button class="btn btn-info" data-toggle="modal" data-target="#taskDetailModal" (click)="onSelect(task)">
-          <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        <a [routerLink]="['/tasks', task.id]" class="btn btn-info">
+          <span class="glyphicon glyphicon-info-sign"></span>
           Details
-        </button>
+        </a>
         <button class="btn btn-danger">
-          <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+          <span class="glyphicon glyphicon-trash"></span>
           Delete
         </button>
       </td>
